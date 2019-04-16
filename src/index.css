@@ -24,11 +24,12 @@ color_grid {
 nav {
   flex-wrap:wrap;
   justify-content:space-evenly;
-  position:fixed;
+  position: fixed;
   height:30vh;
   width:30vh;
   bottom:0;
   right:0;
+
 }
 
 grid_button {
