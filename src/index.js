@@ -4,14 +4,25 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 
 
-
+// generate array of images
 let image_paths = []
 for (let i = 0; i < 6; i++) { image_paths[i] = 'http://alxndr.io/clay'+"0"+i+".jpg" }
-let xxx = 0;
+let xxx = 0; // counter init
+
+
 class ColorBlock extends React.Component {
   constructor (props) { super(props); }
   render () {
-    return ( <color_block id={this.props.color} style={{backgroundColor : this.props.color}}><img src={image_paths[(xxx++)%6]}></img></color_block> )
+    return (
+      <color_block
+        id={this.props.color}
+        style={{backgroundColor : this.props.color}}
+      >
+
+        <img src={image_paths[(xxx++)%6]}></img>
+        <h1 className={'title'}>hello</h1>
+      </color_block>
+    )
   }
 }
 
@@ -83,7 +94,7 @@ class App extends React.Component {
     )
   }
 }
-ReactDOM.render(<App 
+ReactDOM.render(<App
         colors={[
           ["#f8c7aa", "#f19b9c", "#ea708e"]
         , ["#d54d88", "#a73b8f", "#7a2995"]
