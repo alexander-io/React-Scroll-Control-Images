@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Baloo+Bhaijaan);
+
+body {
+  background-color:#212121;
+}
+nav, color_grid, color_block {
+  display:flex;
+}
+nav, color_block {
+  align-items:center;
+}
+color_block {
+  font-family: 'Baloo Bhaijaan';
+  color:white;
+  height:80vh;
+  width:80vw;
+}
+color_grid {
+  flex-wrap:wrap;
+  height:calc(80vh * 3);
+  width:calc(80vw * 3);
+}
+
+nav {
+  flex-wrap:wrap;
+  justify-content:space-evenly;
+  position:fixed;
+  height:30vh;
+  width:30vh;
+  top:calc(50% - (.5 * 30vh));
+  left:calc(50% - (.15 * 30vh));
+}
+
+grid_button {
+  height:7.5vh;
+  width:7.5vh;
+}
+
+grid_button {
+  border-radius:10%;
+  border:solid transparent .7vh;
+}
+grid_button:hover {
+  color: white;
+  border-color: currentColor;
+}
+h1 {
+  padding-left:1em;
+}
+img {
+/*   width:100vw; */
+/*   width:100%; */
+/*   position:relative; */
+   width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
